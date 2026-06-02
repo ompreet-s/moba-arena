@@ -4,26 +4,7 @@
 
 Control your hero using real hand gestures captured by your webcam — no keyboard or mouse required. Push lanes with allied minions, destroy enemy towers, and defeat the enemy crystal to win!
 
----
-
-## 📸 Screenshots
-
-### 🏠 Main Menu
-![Main Menu](screenshots/menu.png)
-
-*Title screen with game instructions and controls overview*
-
-### 🦸 Hero Selection
-![Hero Selection](screenshots/hero_select.png)
-
-*Choose from five anime-inspired fighters — each with unique stats, weapons, and playstyle*
-
-### ⚔️ Gameplay
-![Gameplay](screenshots/gameplay.png)
-
 *Live match with real-time webcam hand-tracking (bottom right), minimap (top right), gold counter, and skill HUD*
-
----
 
 ## ✨ Features
 
