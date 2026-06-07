@@ -1,20 +1,41 @@
 # 🎮 Finger MOBA Arena
 
-> **A webcam-controlled kingdom battle built with Python & OpenCV**
+> **A webcam-controlled kingdom battle — built with Python & OpenCV**
 
-Control your hero using real hand gestures captured by your webcam — no keyboard or mouse required. Push lanes with allied minions, destroy enemy towers, and defeat the enemy crystal to win!
+Control your hero with real hand gestures through your webcam. No mouse. No joystick. Just your fingers. Push lanes with allied minions, destroy enemy towers, and crush the enemy crystal to win!
 
-*Live match with real-time webcam hand-tracking (bottom right), minimap (top right), gold counter, and skill HUD*
+---
+
+## 📸 Screenshots
+
+### 🏠 Main Menu
+![Main Menu](myfolder/begin.png)
+*Title screen showing game controls overview — click START GAME or press Enter to begin*
+
+---
+
+### 🦸 Hero Selection
+![Hero Selection](myfolder/players.png)
+*Choose from five anime-inspired fighters — each with unique stats, weapons and playstyle*
+
+---
+
+### ⚔️ Gameplay
+![Gameplay](myfolder/battle.png)
+*Live match with real-time webcam hand-tracking (bottom-right), minimap (top-right), gold counter and skill HUD*
+
+---
 
 ## ✨ Features
 
-- 🖐️ **Real-time hand gesture control** via OpenCV and webcam
+- 🖐️ **Real-time hand gesture control** via OpenCV + MediaPipe
 - 🧙 **5 unique heroes** — Aiko, Ren, Mika, Sora, and Kuro — each with different stats and weapons
 - 🏰 **Full MOBA loop** — lanes, allied minions, towers, and a base crystal to destroy
 - ⚔️ **Multiple abilities** — basic attacks, skill shots, area bursts, and dashes
 - 🗺️ **Mini-map** for situational awareness
 - 💰 **Gold & leveling system**
 - ⌨️ **Keyboard fallback** controls fully supported
+- 📷 **Live webcam preview** with hand skeleton overlay
 
 ---
 
@@ -34,14 +55,14 @@ Control your hero using real hand gestures captured by your webcam — no keyboa
 
 | Gesture | Action |
 |---------|--------|
-| Move index finger | Guide hero |
+| Move index finger (outside neutral zone) | Move hero |
 | Pinch thumb + index finger | Basic attack |
-| Two fingers (index + middle) | Q — skill shot |
-| Three fingers | E — area burst |
+| Raise index + middle fingers | Q — Skill shot |
+| Raise index + middle + ring fingers | E — Area burst |
 | Open palm | Dash |
-| Fist | Regenerate HP |
+| Make a fist | Regenerate HP |
 
-> 💡 Keep your hand visible in the **Hand Control Camera** window. The small center box is the **neutral zone** — moving your index finger outside it moves the hero.
+> 💡 **Tip:** Keep your hand visible in the **Hand Control Camera** window. The small center box is the **neutral zone** — moving your index finger outside it moves the hero. If the wrong camera opens or the preview is black, press **`C`**.
 
 ---
 
@@ -49,7 +70,7 @@ Control your hero using real hand gestures captured by your webcam — no keyboa
 
 | Key | Action |
 |-----|--------|
-| `W A S D` | Move hero |
+| `W` `A` `S` `D` | Move hero |
 | `Space` / `Q` / `E` / `R` | Skills |
 | `F` | Dash |
 | `P` | Pause |
@@ -93,41 +114,46 @@ python moba_legends_opencv.py
 
 ## 🎯 How to Play
 
-1. The game opens on the **title screen** — click `START GAME` or press `Enter`
-2. On the **hero selection screen**, click a hero card, then click **Play** (or press `Enter`)
-3. Keep your **hand visible** in the webcam preview — move your index finger outside the neutral zone to move the hero
-4. If the wrong camera opens or the preview is black, press **`C`** to switch cameras
-5. Push the lane alongside your allied minions, destroy all **enemy towers**, then destroy the **enemy crystal** to win!
-6. Return to your **starting base** to refill HP. If you die, you respawn after a short delay
-7. After victory, click **PLAY AGAIN** to restart or **EXIT** to close
+1. Game opens on the **title screen** → click `START GAME` or press `Enter`
+2. On the **hero selection screen**, click a hero card → click **Play** or press `Enter`
+3. Keep your **hand visible** in the webcam preview — move your index finger outside the neutral zone to move your hero
+4. If the wrong camera opens or preview is black → press **`C`** to switch cameras
+5. Push the lane with your allied minions → destroy all **enemy towers** → destroy the **enemy crystal** to win!
+6. Return to your **starting base** to refill HP — dying respawns you there after a short delay
+7. After victory → click **PLAY AGAIN** or **EXIT**
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Python 3**
-- **OpenCV** — webcam capture & computer vision
-- **Pygame** — 2D game rendering
-- **MediaPipe** — hand landmark & gesture detection
-
----
-
-## 📁 Project Structure
+## 🗂️ Project Structure
 
 ```
 moba-arena/
-├── moba_legends_opencv.py   # Main game file (all-in-one)
+├── moba_legends_opencv.py   # Main game (all-in-one)
 ├── requirements.txt          # Python dependencies
-├── screenshots/              # README screenshots
+├── myfolder/                 # Screenshots
+│   ├── begin.png             # Main menu
+│   ├── players.png           # Hero selection
+│   └── battle.png            # Gameplay
 └── README.md
 ```
 
 ---
 
-## 📄 License
+## 🛠️ Tech Stack
 
-This project is open source. Feel free to fork, modify, and build upon it!
+| Library | Purpose |
+|---------|---------|
+| **Python 3** | Core language |
+| **OpenCV** | Webcam capture & image processing |
+| **MediaPipe** | Hand landmark & gesture detection |
+| **Pygame** | 2D game rendering & event loop |
 
 ---
 
-> Made with ❤️ using Python & OpenCV
+## 📄 License
+
+Open source — feel free to fork, mod, and build on it!
+
+---
+
+<p align="center">Made with ❤️ using Python & OpenCV</p>
