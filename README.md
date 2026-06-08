@@ -162,7 +162,7 @@ Open source — feel free to fork, mod, and build on it!
 
 | Developer | GitHub |
 |---|---|
-| ompreet-s | [@ompreet-s](https://github.com/ompreet-s) | [Team Leader]
+| ompreet-s | [@ompreet-s](https://github.com/ompreet-s)[Team Leader]| 
 | Supreet37 | [@Supreet37](https://github.com/Supreet37) |
 | sudeshna-24 | [@sudeshna-24](https://github.com/sudeshna-24) |
 
