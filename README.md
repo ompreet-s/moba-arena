@@ -156,4 +156,14 @@ Open source — feel free to fork, mod, and build on it!
 
 ---
 
-<p align="center">Made with ❤️ using Python & OpenCV</p>
+## 👨‍💻 Developed By
+
+<div align="center">
+
+| Developer | GitHub |
+|---|---|
+| Supreet37 | [@Supreet37](https://github.com/Supreet37) |
+| ompreet-s | [@ompreet-s](https://github.com/ompreet-s) |
+| sudeshna-24 | [@sudeshna-24](https://github.com/sudeshna-24) |
+
+
